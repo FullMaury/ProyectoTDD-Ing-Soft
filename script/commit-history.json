@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "62d5653374008cacf504da8fa658db0ef91cf01f",
     "author": "FullMaury",
     "commit": {
       "date": "2025-09-09T16:49:36.000Z",
       "message": "tarifa nocturna + TDD",
-      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/62d5653374008cacf504da8fa658db0ef91cf01f"
     },
     "stats": {
       "total": 34,
@@ -72,6 +72,25 @@
     },
     "coverage": 88.89,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2025-09-09T19:03:08.000Z",
+      "message": "calculo del tope maximo",
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 27,
+      "deletions": 1,
+      "date": "2025-09-09"
+    },
+    "coverage": 86.36,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

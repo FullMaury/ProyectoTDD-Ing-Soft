@@ -40,4 +40,13 @@ function calcularTarifaNocturna(horaIngreso, horaSalida) {
     }
 }
 
-module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase, calcularTarifaNocturna };
+function calcularTopeMaximo(tarifa) {
+    const TOPE_DIARIO = 50.00;
+    if (tarifa > TOPE_DIARIO) {
+        return TOPE_DIARIO;
+    }
+    return tarifa;
+}
+
+
+module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase, calcularTarifaNocturna, calcularTopeMaximo };
