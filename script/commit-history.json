@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9aa1ea8a9f86c8fa899451d828c8981c2187df44",
     "author": "FullMaury",
     "commit": {
       "date": "2025-09-09T15:16:46.000Z",
       "message": "calcular tarifa base subido + TDD",
-      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/9aa1ea8a9f86c8fa899451d828c8981c2187df44"
     },
     "stats": {
       "total": 21,
@@ -53,6 +53,25 @@
     },
     "coverage": 90,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2025-09-09T16:49:36.000Z",
+      "message": "tarifa nocturna + TDD",
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 31,
+      "deletions": 3,
+      "date": "2025-09-09"
+    },
+    "coverage": 88.89,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

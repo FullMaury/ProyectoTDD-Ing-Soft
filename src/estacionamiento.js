@@ -17,10 +17,27 @@ function registrarHoraSalida(hora) {
 }
 
 function calcularTarifaBase(horaIngreso, horaSalida) {
-    // Calculamos la diferencia en milisegundos y luego convertimos a horas
     const diferenciaHoras = (horaSalida - horaIngreso) / 1000 / 60 / 60;
-    // Redondeamos hacia arriba la diferencia de horas para tener una tarifa fraccionada
     return Math.ceil(diferenciaHoras) * 10;
 }
 
-module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase };
+function calcularTarifaNocturna(horaIngreso, horaSalida) {
+    const tarifaNocturnaPorHora = 6;
+    
+    // Obtener las horas de ingreso y salida
+    const horaIngresoNum = horaIngreso.getHours();
+    const horaSalidaNum = horaSalida.getHours();
+    
+    // Verificamos si las horas están dentro del rango nocturno (22:00 a 06:00)
+    const esNocturna = (horaIngresoNum >= 22 || horaSalidaNum <= 6);
+
+    if (esNocturna) {
+        // Calcular la diferencia de horas, similar a la tarifa base
+        const diferenciaHoras = (horaSalida - horaIngreso) / 1000 / 60 / 60;
+        return Math.ceil(diferenciaHoras) * tarifaNocturnaPorHora;
+    } else {
+        return 0; // Si no está en el horario nocturno, no aplica tarifa nocturna
+    }
+}
+
+module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase, calcularTarifaNocturna };
