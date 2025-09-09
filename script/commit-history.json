@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "5b63f5eb94e6ad99216615503035fdf97d9df6ae",
     "author": "FullMaury",
     "commit": {
       "date": "2025-09-09T14:08:32.000Z",
       "message": "TDD implementado el registro de hora de ingreso",
-      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/5b63f5eb94e6ad99216615503035fdf97d9df6ae"
     },
     "stats": {
       "total": 16,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2025-09-09T14:26:45.000Z",
+      "message": "se implemento el registro de hora de salida",
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 21,
+      "deletions": 1,
+      "date": "2025-09-09"
+    },
+    "coverage": 87.5,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }
