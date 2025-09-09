@@ -48,5 +48,14 @@ function calcularTopeMaximo(tarifa) {
     return tarifa;
 }
 
+function calcularPenalidad(ticketPerdido, tarifa) {
+    const PENALIDAD = 80.00;
+    if (ticketPerdido) {
+        return PENALIDAD;
+    }
+    return tarifa;
+}
 
-module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase, calcularTarifaNocturna, calcularTopeMaximo };
+
+
+module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase, calcularTarifaNocturna, calcularTopeMaximo, calcularPenalidad };

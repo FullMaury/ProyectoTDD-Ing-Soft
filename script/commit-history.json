@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "99f763351d3975e517e8931f943ea2df966dc091",
     "author": "FullMaury",
     "commit": {
       "date": "2025-09-09T19:03:08.000Z",
       "message": "calculo del tope maximo",
-      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/99f763351d3975e517e8931f943ea2df966dc091"
     },
     "stats": {
       "total": 28,
@@ -91,6 +91,25 @@
     },
     "coverage": 86.36,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2025-09-09T19:12:29.000Z",
+      "message": "calcular penalidad subido + prueba TDD",
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 23,
+      "deletions": 1,
+      "date": "2025-09-09"
+    },
+    "coverage": 84.62,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }

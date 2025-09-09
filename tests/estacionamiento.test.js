@@ -3,6 +3,7 @@ const { registrarHoraSalida } = require('../src/estacionamiento');
 const { calcularTarifaBase } = require('../src/estacionamiento');
 const { calcularTarifaNocturna } = require('../src/estacionamiento');
 const { calcularTopeMaximo } = require('../src/estacionamiento'); // Aún no existe
+const { calcularPenalidad } = require('../src/estacionamiento');
 
 
 test('Registrar la hora de ingreso', () => {
@@ -52,5 +53,17 @@ test('Aplicar tope máximo por día', () => {
 });
 
 
+test('Aplicar penalidad por pérdida de ticket', () => {
+    const horaIngreso = new Date('2025-09-09T08:00:00');
+    const horaSalida = new Date('2025-09-09T10:30:00');
+    const ticketPerdido = true;
 
+    registrarHoraIngreso(horaIngreso);
+    registrarHoraSalida(horaSalida);
+
+    const tarifaBase = calcularTarifaBase(horaIngreso, horaSalida);
+    const tarifaFinal = calcularPenalidad(ticketPerdido, tarifaBase);
+
+    expect(tarifaFinal).toBe(80.00); // Penalidad aplicada
+});
 
