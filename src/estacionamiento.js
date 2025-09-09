@@ -16,4 +16,11 @@ function registrarHoraSalida(hora) {
     return horaSalida;
 }
 
-module.exports = { registrarHoraIngreso, registrarHoraSalida };  // Exporta ambas funciones
+function calcularTarifaBase(horaIngreso, horaSalida) {
+    // Calculamos la diferencia en milisegundos y luego convertimos a horas
+    const diferenciaHoras = (horaSalida - horaIngreso) / 1000 / 60 / 60;
+    // Redondeamos hacia arriba la diferencia de horas para tener una tarifa fraccionada
+    return Math.ceil(diferenciaHoras) * 10;
+}
+
+module.exports = { registrarHoraIngreso, registrarHoraSalida, calcularTarifaBase };

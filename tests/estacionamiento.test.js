@@ -1,5 +1,6 @@
 const { registrarHoraIngreso } = require('../src/estacionamiento');
 const { registrarHoraSalida } = require('../src/estacionamiento');
+const { calcularTarifaBase } = require('../src/estacionamiento');
 
 test('Registrar la hora de ingreso', () => {
     const horaIngreso = new Date('2025-09-09T08:00:00');
@@ -14,3 +15,14 @@ test('Registrar la hora de salida', () => {
         const resultado = registrarHoraSalida(horaSalida);  
     expect(resultado).toEqual(horaSalida);
 });
+
+test('Calcular tarifa base', () => {
+    const horaIngreso = new Date('2025-09-09T08:00:00');
+    const horaSalida = new Date('2025-09-09T10:30:00'); 
+    registrarHoraIngreso(horaIngreso);
+    registrarHoraSalida(horaSalida);
+    const tarifaBase = calcularTarifaBase(horaIngreso, horaSalida);
+    expect(tarifaBase).toBe(30.00); 
+});
+
+

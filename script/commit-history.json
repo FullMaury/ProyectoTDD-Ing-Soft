@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "918a983a3efdf86911fff51efe6d8a29c39dbe59",
     "author": "FullMaury",
     "commit": {
       "date": "2025-09-09T14:26:45.000Z",
       "message": "se implemento el registro de hora de salida",
-      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/918a983a3efdf86911fff51efe6d8a29c39dbe59"
     },
     "stats": {
       "total": 22,
@@ -34,6 +34,25 @@
     },
     "coverage": 87.5,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2025-09-09T15:16:46.000Z",
+      "message": "calcular tarifa base subido + TDD",
+      "url": "https://github.com/FullMaury/ProyectoTDD-Ing-Soft/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 20,
+      "deletions": 1,
+      "date": "2025-09-09"
+    },
+    "coverage": 90,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
